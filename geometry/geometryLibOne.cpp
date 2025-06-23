@@ -205,6 +205,7 @@ bool circle2PtsRad(pt p1, pt p2, db r, pt &c){ // given 2 points p1 and p2, find
 
 ////////////////// POLYGONS ////////////////
 typePt area_times2(V<pt> poly){ // clockwise or counterclockwise: we return the ABS
+  //https://www.youtube.com/watch?v=sNPh8jgngE0
   typePt res=0;
   for (int iter_lockwise=0; iter_lockwise<(int)poly.size(); iter_lockwise++){
     pt p_i=poly[iter_lockwise];
