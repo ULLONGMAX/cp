@@ -43,7 +43,7 @@ THEOREM: if m_i are NOT pairwise coprime, we can factor all m_i's and solve the 
               for example as m_3 = 2^2 * 3 so x = a_3 (mod m_3) is equivalent to the set of congruencies {x=a_3(mod 2^2), x=a_3(mod 3)}.
         We represent all equations using the Lemma.
         Then we just solve with CRT the set of congruencies taking ONLY THE HIGHEST POWERS FOR EACH PRIME NUMBER.
-        THEOREM: the system of all equations (including the not max prime powers) has ONE AND EXACTLY ONE SOLUTION MOD M=LCM(m_1,...,m_k).
+        THEOREM: the system of all equations (including the not max prime powers) has ONE AND EXACTLY ONE SOLUTION MOD M=LCM(m_1,...,m_k), or NO SOLUTIONS.
 */
 struct Congruence {
   long long a, m;
