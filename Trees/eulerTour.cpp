@@ -1,3 +1,4 @@
+// TÉCNICA QUE TRANSFORMA EL ARBOL EN UNA SECUENCIA LINEAL DE NODOS.
 vector<int> adj[N+1]; // Lista de adyacencia del árbol (1-indexing)
 vector<int> tour_sequence;
 int tin[N+1], tout[N+1];
