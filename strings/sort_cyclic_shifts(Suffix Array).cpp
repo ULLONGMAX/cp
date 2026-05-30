@@ -46,6 +46,13 @@ vector<int> sort_cyclic_shifts(string const& s) {
     return p;
 }
 
+vector<int> suffix_array_construction(string s) {
+    s += "$";
+    vector<int> sorted_shifts = sort_cyclic_shifts(s);
+    sorted_shifts.erase(sorted_shifts.begin());
+    return sorted_shifts;
+}
+
 int main(){
   ios::sync_with_stdio(0);
   cin.tie(0);
