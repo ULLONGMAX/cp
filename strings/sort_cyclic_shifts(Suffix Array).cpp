@@ -47,7 +47,7 @@ vector<int> sort_cyclic_shifts(string const& s) {
 }
 
 vector<int> suffix_array_construction(string s) {
-    s += "$";
+    s += "$"; // cp algorithms says that we need to append a character which is smaller than all other characters at the end of the string
     vector<int> sorted_shifts = sort_cyclic_shifts(s);
     sorted_shifts.erase(sorted_shifts.begin());
     return sorted_shifts;
