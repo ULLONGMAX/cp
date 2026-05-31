@@ -73,7 +73,7 @@ int query(int node, int l, int r, int xl, int xr){
 	int ans=INF;
 	if (xl<=mid) ans=min(ans,query(node*2,l,mid,xl,xr));
 	if (xr>=mid+1) ans=min(ans,query(node*2+1,mid+1,r,xl,xr));
-	Merge(node,l,r);
+	//Merge(node,l,r); we don't need this in query function, just in update
 	return ans;
 }
 
