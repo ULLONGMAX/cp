@@ -1,3 +1,4 @@
+V<AR<int,2> > g[NAX];
 int sz[NAX];
 int par[NAX];
 int lev[NAX];
