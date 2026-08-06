@@ -34,7 +34,7 @@ void decompose(int u, int pa, int hcurr){
   }
 }
 
-int qhld(int a, int b){
+int qhld(int a, int b){ // no need for LCA, I can also calculate LCA with this function
   int res=0;
   while(head[a]!=head[b]){
     if (lev[head[a]]>lev[head[b]]){
